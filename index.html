@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="module" defer></script>
+</head>
+<body>
+    <!-- Sidebars -->
+    <aside>
+        <nav>
+            <a href="/">
+                <div class="icon">Ⓐ</div>
+                <span>Fonts</span>
+            </a>
+            <a href="/icons.html">
+                <div class="icon">★</div>
+                <span>Icons</span>
+            </a>
+            <a href="/knowledge.html">
+                <div class="icon">🤔</div>
+                <span>Knowledge</span>
+            </a>
+        </nav>
+        <div id="filters"></div>
+    </aside>
+    <!-- Main Page -->
+    <main>
+        <header>
+            <section class="header-top">
+                <h1 id="logo"><span>Web</span> Fonts</h1>
+                <input id="search" type="search" placeholder="Search fonts">
+            </section>
+            <section id="cta-wrapper">
+                <button id="filters-button"> 
+                    Filters
+                </button>
+            </section>
+        </header>
+        <section id="card-wrapper" data-layout="grid">
+
+        </section>
+    </main>
+</body>
+</html>
