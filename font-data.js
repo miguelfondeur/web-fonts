@@ -1,32 +1,30 @@
 export const fonts = [
     {
-        name: "Apple System", 
-        declaration: "-apple-system, BlinkMacSystemFont",
-        weights: [400, 700],
-        type: "sans-serif"
-    },
-    {
         name: "Arial", 
         declaration: "Arial",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "sans-serif"
     },    
     {
         name: "Arial Black", 
         declaration: "'Arial Black'",
-        weights: [400, 700],
-        type: ""
+        fallbacks: "",
+        weights: [400],
+        type: "sans-serif"
     },
     {
         name: "Arial Rounded Bold", 
         declaration: "Arial Rounded MT Bold",
-        weights: [400, 700],
-        type: ""
+        fallbacks: "",
+        weights: [400, 600],
+        type: "sans-serif"
     },
     {
         name: "Baskerville", 
         declaration: "Baskerville",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600, 700],
         type: "serif"
     }, 
     // {
@@ -44,7 +42,8 @@ export const fonts = [
     {
         name: "Brush Script MT", 
         declaration: "Brush Script MT",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "cursive"
     },
     // {
@@ -74,7 +73,8 @@ export const fonts = [
     {
         name: "Comic Sans", 
         declaration: "'Comic Sans MS'",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "sans-serif"
     },
     // {
@@ -86,7 +86,8 @@ export const fonts = [
     {
         name: "Copperplate", 
         declaration: "Copperplate",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [100, 400, 600],
         type: "serif"
     },
     // {
@@ -98,13 +99,15 @@ export const fonts = [
     {
         name: "Courier New", 
         declaration: "Courier",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "monospace"
     },
     {
         name: "Cursive", 
         declaration: "Cursive",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "cursive"
     },
     // {
@@ -122,7 +125,8 @@ export const fonts = [
     {
         name: "Futura", 
         declaration: "Futura",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "sans-serif"
     },
     // {
@@ -134,13 +138,15 @@ export const fonts = [
     {
         name: "Geneva", 
         declaration: "Geneva",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "sans-serif"
     },
     {
         name: "Georgia", 
         declaration: "Georgia",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "serif"
     },
     // {
@@ -152,25 +158,29 @@ export const fonts = [
     {
         name: "Helvetica", 
         declaration: "Helvetica",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [100, 400, 600],
         type: "sans-serif"
     },
     {
         name: "Helvetica Neue", 
         declaration: "Helvetica Neue",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [100, 200, 400, 500, 600],
         type: "sans-serif"
     },
     {
         name: "Hoefler Text", 
         declaration: "Hoefler Text",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "serif"
     },  
     {
         name: "Impact", 
         declaration: "Impact",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400],
         type: "sans-serif"
     },
     // {
@@ -188,43 +198,50 @@ export const fonts = [
     {
         name: "Monaco", 
         declaration: "monaco",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "monospace"
     },
     {
         name: "Optima", 
         declaration: "Optima",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600, 800],
         type: "sans-serif"
     },
     {
         name: "Palatino", 
         declaration: "'Palatino'",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "serif"
     },  
     {
         name: "Palatino Linotype", 
         declaration: "'Palatino Linotype'",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "serif"
     },    
     {
         name: "Papyrus", 
         declaration: "Papyrus",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "fantasy"
     },
     {
         name: "Rockwell", 
         declaration: "Rockwell",
+        fallbacks: "",
         weights: [400, 700],
         type: "serif"
     },  
     {
         name: "Sans Serif", 
         declaration: "sans-serif",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [100, 400, 600],
         type: "sans-serif"
     },       
     // {
@@ -240,33 +257,45 @@ export const fonts = [
     //     type: "sans-serif"
     // },
     {
+        name: "System Sans Serif", 
+        declaration: "ui-sans-serif, system-ui",
+        fallbacks: "",
+        weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+        type: "sans-serif"
+    },
+    {
         name: "Tahoma", 
         declaration: "Tahoma",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "sans-serif"
     },
     {
         name: "Times", 
         declaration: "Times",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "serif"
     },
     {
         name: "Times New Roman", 
         declaration: "'Times New Roman'",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "serif"
     },
     {
         name: "Trebuchet MS", 
         declaration: "'Trebuchet MS'",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "sans-serif"
     },    
     {
         name: "Verdana", 
         declaration: "Verdana",
-        weights: [400, 700],
+        fallbacks: "",
+        weights: [400, 600],
         type: "sans-serif"
     }
 ];

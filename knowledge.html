@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Safe Fonts | Knowledge</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" type="module" defer></script>
+    <script src="sidebar.js" type="module" defer></script>
+    <meta name="author" content="Miguel Fondeur">
+    <meta name="description" content="Explore and test web fonts with ease. Filter by style, preview font weights, and generate CSS declarations for your typography projects.">
+    <meta name="keywords" content="web fonts, typography, font preview, CSS fonts, font styles, font weight, web design">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Web Font Explorer">
+    <meta property="og:description" content="An interactive tool to explore, preview, and test web fonts with dynamic filtering and CSS generation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Font Explorer">
+    <meta name="twitter:description" content="Discover and test web fonts dynamically with filtering and CSS declarations.">
+    <meta name="twitter:image" content="https://yourwebsite.com/preview-image.jpg">
 </head>
 <body>
     <!-- Sidebars -->
     <aside>
         <nav>
-            <a href="/">
-                <div class="icon">Ⓐ</div>
+            <a href="/" >
+                <div class="icon-square">
+                    <span class="icon">A</span>
+                </div>
                 <span>Fonts</span>
             </a>
-            <!--
-                <a href="/icons.html">
-                    <div class="icon">★</div>
-                    <span>Icons</span>
-                </a>
-            -->
-            <a href="/knowledge.html">
-                <div class="icon">🤔</div>
+            <a href="/knowledge.html" aria-current="page">
+                <div class="icon-square">
+                    <span class="icon">?</span>
+                </div>
                 <span>Knowledge</span>
             </a>
         </nav>
-        <div id="filters" data-open="true">
-
+        <div id="filters" data-open="false">
+            <!-- Pages -->
+            <menu class="section-menu">
+                <li><a href="#what-are-web-safe-fonts" title="">What Are Web Safe Fonts</a></li>
+                <li><a href="#advantages" title="">Advantages</a></li>
+                <li><a href="#challenges" title="">Challenges</a></li>
+                <li><a href="#when-to-use-them" title="">When To Use Them</a></li>
+            </menu>
         </div>
     </aside>
     <!-- Main Page -->
@@ -38,9 +55,6 @@
             </section>
             <section id="cta-wrapper">
                 <button id="filters-button" data-open="true"> 
-                    <span class="icon">
-                        <i class="icon-class">⨯</i>
-                    </span>
                     Sections
                 </button>
             </section>

@@ -1,104 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" type="module" defer></script>
-</head>
-<body>
-    <!-- Sidebars -->
-    <aside>
-        <nav>
-            <a href="/">
-                <div class="icon">Ⓐ</div>
-                <span>Fonts</span>
-            </a>
-            <!--
-                <a href="/icons.html">
-                    <div class="icon">★</div>
-                    <span>Icons</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Safe Fonts | Fonts</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" type="module" defer></script>
+        <script src="sidebar.js" type="module" defer></script>
+        <meta name="author" content="Miguel Fondeur">
+        <meta name="description" content="Explore and test web fonts with ease. Filter by style, preview font weights, and generate CSS declarations for your typography projects.">
+        <meta name="keywords" content="web fonts, typography, font preview, CSS fonts, font styles, font weight, web design">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Web Font Explorer">
+        <meta property="og:description" content="An interactive tool to explore, preview, and test web fonts with dynamic filtering and CSS generation.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://yourwebsite.com">
+        <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Web Font Explorer">
+        <meta name="twitter:description" content="Discover and test web fonts dynamically with filtering and CSS declarations.">
+        <meta name="twitter:image" content="https://yourwebsite.com/preview-image.jpg">
+    </head>
+    <body>
+        <!-- Sidebars -->
+        <aside>
+            <nav>
+                <a href="/" aria-current="page">
+                    <div class="icon-square">
+                        <span class="icon">A</span>
+                    </div>
+                    <span>Fonts</span>
                 </a>
-            -->
-            <a href="/knowledge.html">
-                <div class="icon">🤔</div>
-                <span>Knowledge</span>
-            </a>
-        </nav>
-        <div id="filters" data-open="true">
-            <form>
-                <fieldset>
-                    <h3>Preview</h3>
-                    <div class="field-group">
-                        <input
-                            type="text" 
-                            id="sample-text" 
-                            placeholder="Type something"
-                            autocomplete="off" 
-                            autocorrect="off" 
-                            autocapitalize="off" 
-                            spellcheck="false" 
-                        >
+                <a href="/knowledge.html">
+                    <div class="icon-square">
+                        <span class="icon">?</span>
                     </div>
-                </fieldset>
+                    <span>Knowledge</span>
+                </a>
+            </nav>
+            <div id="filters" data-open="true">
+                <form>
+                    <fieldset>
+                        <h3>Preview</h3>
+                        <div class="field-group">
+                            <input
+                                type="text" 
+                                id="sample-text" 
+                                placeholder="Type something"
+                                autocomplete="off" 
+                                autocorrect="off" 
+                                autocapitalize="off" 
+                                spellcheck="false" 
+                            >
+                        </div>
+                    </fieldset>
 
-                <fieldset>
-                    <h3>Styles</h3>
-                    <div class="field-group">
-                        <label class="style-select">
-                            <input type="checkbox" name="serif" id="serif-select">
-                            <div class="icon">✓</div>
-                            Serif
-                        </label>
-                        <label class="style-select">
-                            <input type="checkbox" name="sans-serif" id="sans-serif-select">
-                            <div class="icon">✓</div>
-                            Sans Serif
-                        </label>
-                        <label class="style-select">
-                            <input type="checkbox" name="monospace" id="monospace-select">
-                            <div class="icon">✓</div>
-                            Monospace
-                        </label>
-                        <label class="style-select">
-                            <input type="checkbox" name="cursive" id="cursive-select">
-                            <div class="icon">✓</div>
-                            Cursive
-                        </label>
+                    <fieldset>
+                        <h3>Styles</h3>
+                        <div class="field-group">
+                            <label class="style-select">
+                                <input type="checkbox" name="serif" id="serif-select">
+                                <div class="icon">✓</div>
+                                Serif
+                            </label>
+                            <label class="style-select">
+                                <input type="checkbox" name="sans-serif" id="sans-serif-select">
+                                <div class="icon">✓</div>
+                                Sans Serif
+                            </label>
+                            <label class="style-select">
+                                <input type="checkbox" name="monospace" id="monospace-select">
+                                <div class="icon">✓</div>
+                                Monospace
+                            </label>
+                            <label class="style-select">
+                                <input type="checkbox" name="cursive" id="cursive-select">
+                                <div class="icon">✓</div>
+                                Cursive
+                            </label>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </aside>
+        <!-- Main Page -->
+        <main>
+            <header>
+                <section class="header-top">
+                    <h1 id="logo"><span>Web</span> Fonts</h1>
+                    <input 
+                        id="search" 
+                        type="search" 
+                        autocomplete="off" 
+                        autocorrect="off" 
+                        autocapitalize="off" 
+                        spellcheck="false" 
+                        placeholder="Search fonts"
+                    >
+                </section>
+                <section id="cta-wrapper">
+                    <button id="filters-button" data-open="false"> 
+                        Filters
+                    </button>
+                </section>
+            </header>
+            <!-- Cards -->
+            <section id="card-wrapper" data-layout="grid"></section>
+        </main>
+        <!-- Card Details -->
+        <dialog id="details" popover>
+            <header>
+                <button tabindex="0" class="close-dialog-button" popovertarget="details" popovertargetaction="hide">Back</button>
+                <h1 id="active-font-title"></h1>
+                <details>
+                    <summary>Use Font</summary>
+                    <div class="content">
+                        <p><strong>CSS Declaration</strong></p>
+                        <div id="css-declaration"></div>
+                
+                        <p><strong>Using Styles</strong></p>
+                        <pre><code>
+font-weight: bold; 
+font-weight: 600;
+font-style: italic;
+font-variant: small-caps;
+color: #C0FFEE;
+                        </code></pre>
+                
+                        <p><strong>Considerations</strong></p>
+                        <p>Use fallbacks. Not all browsers and operating systems support all fonts. If you're using a font with multiple font-weights, consider a fallback that also includes a similar quantity.</p>
+                        <div id="css-fallbacks"></div>
+                
+                        <p>Consider adding your font as a CSS custom property. This is especially useful when using more than one font.</p>
+                        <pre><code>
+:root {
+    --font-heading: Tahoma;
+    --font-body: sans-serif;
+}
+                        </code></pre>
                     </div>
-                </fieldset>
-            </form>
-
-        </div>
-    </aside>
-    <!-- Main Page -->
-    <main>
-        <header>
-            <section class="header-top">
-                <h1 id="logo"><span>Web</span> Fonts</h1>
-                <input 
-                    id="search" 
-                    type="search" 
-                    autocomplete="off" 
-                    autocorrect="off" 
-                    autocapitalize="off" 
-                    spellcheck="false" 
-                    placeholder="Search fonts"
-                >
+                </details>
+            </header>
+            <!-- Specimen? -->
+            <section id="specimen-section">
+                <h2 class="display-text">Whereas disregard and contempt for human rights have resulted.</h2>
             </section>
-            <section id="cta-wrapper">
-                <button id="filters-button" data-open="true"> 
-                    <span class="icon">
-                        <i class="icon-class">⨯</i>
-                    </span>
-                    Filters
-                </button>
+            <!-- Styles -->
+            <section id="styles-section">
+                <h2>Styles</h2>
+                <div id="style-preview"></div>
             </section>
-        </header>
-        <section id="card-wrapper" data-layout="grid">
-
-        </section>
-    </main>
-</body>
+            <section id="playground-section">
+                <h2>Type Tester</h2>
+                <div class="text-playground">
+                    <div class="playground-header">
+                        <p>Playground</p>
+                    </div>
+                    <div class="text-body" contenteditable="true" spellcheck="false">
+                        <h1>Whereas recognition of the inherent dignity</h1>
+                        <h2>Section Title Three</h2>
+                        <p>
+                            <strong>Whereas</strong> all individuals are entitled to <em>universal</em> and 
+                            <u>equal access</u> to digital resources, and whereas digital literacy is a 
+                            fundamental right, it is essential to establish principles of <mark>accessibility</mark>, 
+                            <s>discrimination</s>-free practices, and ethical data governance.  
+                        </p>
+                        <h3>Section Title Three</h3>
+                        <p>
+                            The protection of personal data <sub>(Article 12)</sub> and the safeguarding 
+                            of online freedoms <sup>(Amendment II)</sup> are paramount. 
+                            No entity shall <del>infringe</del> upon these rights without due process.
+                        </p>
+                        <p>
+                            <ins>Therefore</ins>, let it be resolved that all digital entities shall uphold 
+                            the principles of security, transparency, and <b>fairness</b>. The right to 
+                            online privacy shall not be abridged, and all individuals shall retain ownership 
+                            of their digital presence. 
+                        </p>                        
+                    </div>
+                </div>
+            </section>
+        </dialog>
+    </body>
 </html>
