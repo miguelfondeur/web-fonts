@@ -503,6 +503,17 @@ dialog {
     }
 }
 
+.my-website-link {
+    position: absolute;
+    bottom: 20px;
+    color: #363939;
+    transition: color .1s linear;
+
+    &:hover {
+        color: white;
+    }
+}
+
 .section-menu {
     display: flex;
     flex-direction: column;
