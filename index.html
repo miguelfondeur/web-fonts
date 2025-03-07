@@ -15,26 +15,83 @@
                 <div class="icon">Ⓐ</div>
                 <span>Fonts</span>
             </a>
-            <a href="/icons.html">
-                <div class="icon">★</div>
-                <span>Icons</span>
-            </a>
+            <!--
+                <a href="/icons.html">
+                    <div class="icon">★</div>
+                    <span>Icons</span>
+                </a>
+            -->
             <a href="/knowledge.html">
                 <div class="icon">🤔</div>
                 <span>Knowledge</span>
             </a>
         </nav>
-        <div id="filters"></div>
+        <div id="filters" data-open="true">
+            <form>
+                <fieldset>
+                    <h3>Preview</h3>
+                    <div class="field-group">
+                        <input
+                            type="text" 
+                            id="sample-text" 
+                            placeholder="Type something"
+                            autocomplete="off" 
+                            autocorrect="off" 
+                            autocapitalize="off" 
+                            spellcheck="false" 
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Styles</h3>
+                    <div class="field-group">
+                        <label class="style-select">
+                            <input type="checkbox" name="serif" id="serif-select">
+                            <div class="icon">✓</div>
+                            Serif
+                        </label>
+                        <label class="style-select">
+                            <input type="checkbox" name="sans-serif" id="sans-serif-select">
+                            <div class="icon">✓</div>
+                            Sans Serif
+                        </label>
+                        <label class="style-select">
+                            <input type="checkbox" name="monospace" id="monospace-select">
+                            <div class="icon">✓</div>
+                            Monospace
+                        </label>
+                        <label class="style-select">
+                            <input type="checkbox" name="cursive" id="cursive-select">
+                            <div class="icon">✓</div>
+                            Cursive
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
     </aside>
     <!-- Main Page -->
     <main>
         <header>
             <section class="header-top">
                 <h1 id="logo"><span>Web</span> Fonts</h1>
-                <input id="search" type="search" placeholder="Search fonts">
+                <input 
+                    id="search" 
+                    type="search" 
+                    autocomplete="off" 
+                    autocorrect="off" 
+                    autocapitalize="off" 
+                    spellcheck="false" 
+                    placeholder="Search fonts"
+                >
             </section>
             <section id="cta-wrapper">
-                <button id="filters-button"> 
+                <button id="filters-button" data-open="true"> 
+                    <span class="icon">
+                        <i class="icon-class">⨯</i>
+                    </span>
                     Filters
                 </button>
             </section>
