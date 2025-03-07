@@ -1,6 +1,7 @@
 /* Base */
 :root {
     --font-size-example: 40px;
+    --selected-font: "Arial",
 }
 
 /* Preferences  */
