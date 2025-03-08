@@ -304,5 +304,12 @@ export const fonts = [
         fallbacks: "",
         weights: [400, 600],
         type: "sans-serif"
+    },
+    {
+        name: "Webdings", 
+        declaration: "webdings",
+        fallbacks: "",
+        weights: [400],
+        type: "symbols"
     }
 ];
