@@ -65,9 +65,9 @@ document.addEventListener('click', e => {
 
     if (card) {
         // Close the sidebar if open
-        const filters = document.getElementById('filters');
-        if (filters.getAttribute('data-open') === "true") {
-            filters.setAttribute('data-open', "false");
+        const body = document.body;
+        if (body.getAttribute('data-sidebar-open') === "true") {
+            body.setAttribute('data-sidebar-open', "false");
         }
 
         // Open font details
