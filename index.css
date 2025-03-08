@@ -114,6 +114,7 @@ aside {
                     align-items: center;
                     justify-content: center;
                     border-radius: 3px;
+                    border: 2px solid;
                 }
             }
             & span {
@@ -325,6 +326,7 @@ main header {
         text-align: left;
         color: rgb(196, 199, 197);
         cursor: pointer;
+        position: relative;
 
         &:hover {
             background-color: #232323;
@@ -344,6 +346,16 @@ main header {
             h3, p {
                 margin-bottom: 0;
             }
+        }
+        .supported-by {
+            display: inline-flex;
+            width: fit-content;
+            align-items: center;
+            gap: 4px;
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            opacity: .5;
         }
     }
     
@@ -503,7 +515,7 @@ dialog {
 
     .text-body {
         font-family: var(--active-font);
-        padding: 24px 24px 16px;
+        padding: 0 24px 16px;
         /* max-height: 504px; */
         overflow-y: scroll;
 
@@ -540,6 +552,8 @@ dialog {
             font-size: 1em;
             line-height: calc(1ex / 0.32);
             margin: calc(1ex / 0.32) 0;
+            width: 70ch;
+            max-width: 100%;
         }
 
         mark {

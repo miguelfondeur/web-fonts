@@ -5,7 +5,7 @@ export const fonts = [
         fallbacks: "'Helvetica', sans-serif",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },    
     {
         name: "Arial Black", 
@@ -13,7 +13,7 @@ export const fonts = [
         fallbacks: "'Arial', 'Helvetica', sans-serif",
         weights: [400],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "ios", "android"]
     },
     {
         name: "Arial Rounded Bold", 
@@ -21,7 +21,7 @@ export const fonts = [
         fallbacks: "'Arial', 'Helvetica', sans-serif",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS"]
+        supportedOS: ["windows", "macos"]
     },
     {
         name: "Baskerville", 
@@ -29,7 +29,7 @@ export const fonts = [
         fallbacks: "'Times New Roman', 'Georgia', serif",
         weights: [400, 600, 700],
         type: "serif",
-        supportedOS: ["macOS", "iOS"]
+        supportedOS: ["macos", "ios"]
     },  
     {
         name: "Brush Script MT", 
@@ -37,7 +37,7 @@ export const fonts = [
         fallbacks: "'Comic Sans MS', cursive",
         weights: [400, 600],
         type: "cursive",
-        supportedOS: ["Windows", "macOS", "iOS"]
+        supportedOS: ["windows", "macos", "ios"]
     },
     {
         name: "Cambria Math", 
@@ -45,7 +45,7 @@ export const fonts = [
         fallbacks: "'Cambria', serif",
         weights: [400, 600],
         type: "serif",
-        supportedOS: ["Windows"]
+        supportedOS: ["windows"]
     },
     {
         name: "Comic Sans", 
@@ -53,7 +53,7 @@ export const fonts = [
         fallbacks: "cursive",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Copperplate", 
@@ -61,7 +61,7 @@ export const fonts = [
         fallbacks: "'Times New Roman', serif",
         weights: [100, 400, 600],
         type: "serif",
-        supportedOS: ["macOS", "iOS"]
+        supportedOS: ["macos", "ios"]
     },
     {
         name: "Courier New", 
@@ -69,7 +69,7 @@ export const fonts = [
         fallbacks: "'Courier New', monospace",
         weights: [400, 600],
         type: "monospace",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Cursive", 
@@ -77,7 +77,7 @@ export const fonts = [
         fallbacks: "sans-serif",
         weights: [400, 600],
         type: "cursive",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Futura", 
@@ -85,7 +85,7 @@ export const fonts = [
         fallbacks: "'Arial', sans-serif",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["macOS", "iOS"]
+        supportedOS: ["macos", "ios"]
     },
     {
         name: "Geneva", 
@@ -93,7 +93,7 @@ export const fonts = [
         fallbacks: "'Verdana', sans-serif",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["macOS"]
+        supportedOS: ["macos"]
     },
     {
         name: "Georgia", 
@@ -101,7 +101,7 @@ export const fonts = [
         fallbacks: "'Times New Roman', serif",
         weights: [400, 600],
         type: "serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Helvetica", 
@@ -109,7 +109,7 @@ export const fonts = [
         fallbacks: "'Arial', sans-serif",
         weights: [100, 400, 600],
         type: "sans-serif",
-        supportedOS: ["macOS", "iOS"]
+        supportedOS: ["macos", "ios"]
     },
     {
         name: "Helvetica Neue", 
@@ -117,7 +117,7 @@ export const fonts = [
         fallbacks: "'Helvetica', 'Arial', sans-serif",
         weights: [100, 200, 400, 500, 600],
         type: "sans-serif",
-        supportedOS: ["macOS", "iOS"]
+        supportedOS: ["macos", "ios"]
     },
     {
         name: "Impact", 
@@ -125,7 +125,7 @@ export const fonts = [
         fallbacks: "'Arial Black', 'Arial', sans-serif",
         weights: [400],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Monaco", 
@@ -133,7 +133,7 @@ export const fonts = [
         fallbacks: "'Courier New', monospace",
         weights: [400, 600],
         type: "monospace",
-        supportedOS: ["macOS", "iOS"]
+        supportedOS: ["macos", "ios"]
     },
     {
         name: "Optima", 
@@ -141,7 +141,7 @@ export const fonts = [
         fallbacks: "'Arial', sans-serif",
         weights: [400, 600, 800],
         type: "sans-serif",
-        supportedOS: ["macOS", "iOS"]
+        supportedOS: ["macos", "ios"]
     },
     {
         name: "Papyrus", 
@@ -149,7 +149,7 @@ export const fonts = [
         fallbacks: "'Comic Sans MS', 'Arial', sans-serif",
         weights: [400, 600],
         type: "fantasy",
-        supportedOS: ["Windows", "macOS", "iOS"]
+        supportedOS: ["windows", "macos", "ios"]
     },
     {
         name: "Palatino", 
@@ -157,7 +157,7 @@ export const fonts = [
         fallbacks: "'Times New Roman', serif",
         weights: [400, 600],
         type: "serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },  
     {
         name: "Tahoma", 
@@ -165,7 +165,7 @@ export const fonts = [
         fallbacks: "'Verdana', sans-serif",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Times", 
@@ -173,7 +173,7 @@ export const fonts = [
         fallbacks: "'Times New Roman', serif",
         weights: [400, 600],
         type: "serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Times New Roman", 
@@ -181,7 +181,7 @@ export const fonts = [
         fallbacks: "'Times', serif",
         weights: [400, 600],
         type: "serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Trebuchet MS", 
@@ -189,7 +189,7 @@ export const fonts = [
         fallbacks: "'Arial', sans-serif",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },    
     {
         name: "Verdana", 
@@ -197,7 +197,7 @@ export const fonts = [
         fallbacks: "'Tahoma', sans-serif",
         weights: [400, 600],
         type: "sans-serif",
-        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
+        supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
         name: "Webdings", 
@@ -205,6 +205,6 @@ export const fonts = [
         fallbacks: "fantasy",
         weights: [400],
         type: "symbol",
-        supportedOS: ["Windows", "macOS"]
+        supportedOS: ["windows", "macos"]
     }
 ];
