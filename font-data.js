@@ -46,6 +46,13 @@ export const fonts = [
         weights: [400, 600],
         type: "cursive"
     },
+    {
+        name: "Cambria Math", 
+        declaration: "math",
+        fallbacks: "",
+        weights: [400, 600],
+        type: "serif"
+    },
     // {
     //     name: "Calibri", 
     //     declaration: "Calibri",
