@@ -45,7 +45,7 @@ export const fonts = [
         fallbacks: "'Cambria', serif",
         weights: [400, 600],
         type: "serif",
-        supportedOS: ["windows"]
+        supportedOS: ["windows, macos"]
     },
     {
         name: "Comic Sans", 
