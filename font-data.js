@@ -2,314 +2,209 @@ export const fonts = [
     {
         name: "Arial", 
         declaration: "Arial",
-        fallbacks: "",
+        fallbacks: "'Helvetica', sans-serif",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },    
     {
         name: "Arial Black", 
         declaration: "'Arial Black'",
-        fallbacks: "",
+        fallbacks: "'Arial', 'Helvetica', sans-serif",
         weights: [400],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS", "iOS", "Android"]
     },
     {
         name: "Arial Rounded Bold", 
         declaration: "Arial Rounded MT Bold",
-        fallbacks: "",
+        fallbacks: "'Arial', 'Helvetica', sans-serif",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS"]
     },
     {
         name: "Baskerville", 
         declaration: "Baskerville",
-        fallbacks: "",
+        fallbacks: "'Times New Roman', 'Georgia', serif",
         weights: [400, 600, 700],
-        type: "serif"
-    }, 
-    // {
-    //     name: "Baskerville Old Face", 
-    //     declaration: "Baskerville Old Face",
-    //     weights: [400, 700],
-    //     type: "serif"
-    // },  
-    // {
-    //     name: "Book Antiqua", 
-    //     declaration: "Book Antiqua",
-    //     weights: [400, 700],
-    //     type: "serif"
-    // },  
+        type: "serif",
+        supportedOS: ["macOS", "iOS"]
+    },  
     {
         name: "Brush Script MT", 
         declaration: "Brush Script MT",
-        fallbacks: "",
+        fallbacks: "'Comic Sans MS', cursive",
         weights: [400, 600],
-        type: "cursive"
+        type: "cursive",
+        supportedOS: ["Windows", "macOS", "iOS"]
     },
     {
         name: "Cambria Math", 
         declaration: "math",
-        fallbacks: "",
+        fallbacks: "'Cambria', serif",
         weights: [400, 600],
-        type: "serif"
+        type: "serif",
+        supportedOS: ["Windows"]
     },
-    // {
-    //     name: "Calibri", 
-    //     declaration: "Calibri",
-    //     weights: [400, 700],
-    //     type: "sans-serif"
-    // },
-    // {
-    //     name: "Calisto", 
-    //     declaration: "Calisto MT",
-    //     weights: [400, 700],
-    //     type: "serif"
-    // },
-    // {
-    //     name: "Candara", 
-    //     declaration: "Candara",
-    //     weights: [400, 700],
-    //     type: "sans-serif"
-    // },
-    // {
-    //     name: "Century", 
-    //     declaration: "Century Gothic",
-    //     weights: [400, 700],
-    //     type: "sans-serif"
-    // },
     {
         name: "Comic Sans", 
         declaration: "'Comic Sans MS'",
-        fallbacks: "",
+        fallbacks: "cursive",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
-    // {
-    //     name: "Consolas", 
-    //     declaration: "Consolas",
-    //     weights: [400, 700],
-    //     type: "monospace"
-    // },
     {
         name: "Copperplate", 
         declaration: "Copperplate",
-        fallbacks: "",
+        fallbacks: "'Times New Roman', serif",
         weights: [100, 400, 600],
-        type: "serif"
+        type: "serif",
+        supportedOS: ["macOS", "iOS"]
     },
-    // {
-    //     name: "Copperplate Gothic Light", 
-    //     declaration: "Copperplate Gothic Light",
-    //     weights: [400, 700],
-    //     type: "serif"
-    // },
     {
         name: "Courier New", 
         declaration: "Courier",
-        fallbacks: "",
+        fallbacks: "'Courier New', monospace",
         weights: [400, 600],
-        type: "monospace"
+        type: "monospace",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
     {
         name: "Cursive", 
         declaration: "Cursive",
-        fallbacks: "",
+        fallbacks: "sans-serif",
         weights: [400, 600],
-        type: "cursive"
+        type: "cursive",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
-    // {
-    //     name: "Franklin Gothic", 
-    //     declaration: "Franklin Gothic Medium",
-    //     weights: [400, 700],
-    //     type: "sans-serif"
-    // },
-    // {
-    //     name: "Frutiger", 
-    //     declaration: "Frutiger",
-    //     weights: [400, 700],
-    //     type: "sans-serif"
-    // },
     {
         name: "Futura", 
         declaration: "Futura",
-        fallbacks: "",
+        fallbacks: "'Arial', sans-serif",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["macOS", "iOS"]
     },
-    // {
-    //     name: "Garamond", 
-    //     declaration: "Garamond",
-    //     weights: [400, 700],
-    //     type: "serif"
-    // },  
     {
         name: "Geneva", 
         declaration: "Geneva",
-        fallbacks: "",
+        fallbacks: "'Verdana', sans-serif",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["macOS"]
     },
     {
         name: "Georgia", 
         declaration: "Georgia",
-        fallbacks: "",
+        fallbacks: "'Times New Roman', serif",
         weights: [400, 600],
-        type: "serif"
+        type: "serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
-    // {
-    //     name: "Goudy Old Style", 
-    //     declaration: "Goudy Old Style",
-    //     weights: [400, 700],
-    //     type: "serif"
-    // },
     {
         name: "Helvetica", 
         declaration: "Helvetica",
-        fallbacks: "",
+        fallbacks: "'Arial', sans-serif",
         weights: [100, 400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["macOS", "iOS"]
     },
     {
         name: "Helvetica Neue", 
         declaration: "Helvetica Neue",
-        fallbacks: "",
+        fallbacks: "'Helvetica', 'Arial', sans-serif",
         weights: [100, 200, 400, 500, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["macOS", "iOS"]
     },
-    {
-        name: "Hoefler Text", 
-        declaration: "Hoefler Text",
-        fallbacks: "",
-        weights: [400, 600],
-        type: "serif"
-    },  
     {
         name: "Impact", 
         declaration: "Impact",
-        fallbacks: "",
+        fallbacks: "'Arial Black', 'Arial', sans-serif",
         weights: [400],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
-    // {
-    //     name: "Lucida", 
-    //     declaration: "Lucida Sans Unicode",
-    //     weights: [400, 700],
-    //     type: "sans-serif"
-    // },
-    // {
-    //     name: "Lucida Console", 
-    //     declaration: "Lucida Console",
-    //     weights: [400, 700],
-    //     type: "monospace"
-    // },
     {
         name: "Monaco", 
         declaration: "monaco",
-        fallbacks: "",
+        fallbacks: "'Courier New', monospace",
         weights: [400, 600],
-        type: "monospace"
+        type: "monospace",
+        supportedOS: ["macOS", "iOS"]
     },
     {
         name: "Optima", 
         declaration: "Optima",
-        fallbacks: "",
+        fallbacks: "'Arial', sans-serif",
         weights: [400, 600, 800],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["macOS", "iOS"]
+    },
+    {
+        name: "Papyrus", 
+        declaration: "Papyrus",
+        fallbacks: "'Comic Sans MS', 'Arial', sans-serif",
+        weights: [400, 600],
+        type: "fantasy",
+        supportedOS: ["Windows", "macOS", "iOS"]
     },
     {
         name: "Palatino", 
         declaration: "'Palatino'",
-        fallbacks: "",
+        fallbacks: "'Times New Roman', serif",
         weights: [400, 600],
-        type: "serif"
+        type: "serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },  
-    {
-        name: "Palatino Linotype", 
-        declaration: "'Palatino Linotype'",
-        fallbacks: "",
-        weights: [400, 600],
-        type: "serif"
-    },    
-    {
-        name: "Papyrus", 
-        declaration: "Papyrus",
-        fallbacks: "",
-        weights: [400, 600],
-        type: "fantasy"
-    },
-    {
-        name: "Rockwell", 
-        declaration: "Rockwell",
-        fallbacks: "",
-        weights: [400, 700],
-        type: "serif"
-    },  
-    {
-        name: "Sans Serif", 
-        declaration: "sans-serif",
-        fallbacks: "",
-        weights: [100, 400, 600],
-        type: "sans-serif"
-    },       
-    // {
-    //     name: "Serif", 
-    //     declaration: "serif",
-    //     weights: [400, 700],
-    //     type: "serif"
-    // },
-    // {
-    //     name: "Segoe UI", 
-    //     declaration: "Segoe UI",
-    //     weights: [400, 700],
-    //     type: "sans-serif"
-    // },
-    {
-        name: "System Sans Serif", 
-        declaration: "ui-sans-serif, system-ui",
-        fallbacks: "",
-        weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-        type: "sans-serif"
-    },
     {
         name: "Tahoma", 
         declaration: "Tahoma",
-        fallbacks: "",
+        fallbacks: "'Verdana', sans-serif",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
     {
         name: "Times", 
         declaration: "Times",
-        fallbacks: "",
+        fallbacks: "'Times New Roman', serif",
         weights: [400, 600],
-        type: "serif"
+        type: "serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
     {
         name: "Times New Roman", 
         declaration: "'Times New Roman'",
-        fallbacks: "",
+        fallbacks: "'Times', serif",
         weights: [400, 600],
-        type: "serif"
+        type: "serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
     {
         name: "Trebuchet MS", 
         declaration: "'Trebuchet MS'",
-        fallbacks: "",
+        fallbacks: "'Arial', sans-serif",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },    
     {
         name: "Verdana", 
         declaration: "Verdana",
-        fallbacks: "",
+        fallbacks: "'Tahoma', sans-serif",
         weights: [400, 600],
-        type: "sans-serif"
+        type: "sans-serif",
+        supportedOS: ["Windows", "macOS", "Linux", "iOS", "Android"]
     },
     {
         name: "Webdings", 
         declaration: "webdings",
-        fallbacks: "",
+        fallbacks: "fantasy",
         weights: [400],
-        type: "symbols"
+        type: "symbol",
+        supportedOS: ["Windows", "macOS"]
     }
 ];

@@ -55,6 +55,11 @@ body[data-sidebar-open="true"] {
         #filters {
             width: 320px;
         }
+
+        form {
+            overflow: scroll;
+            height: 100%;
+        }
     }
 }
 
