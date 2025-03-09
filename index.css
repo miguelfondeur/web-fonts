@@ -356,7 +356,7 @@ main header {
             display: inline-flex;
             width: fit-content;
             align-items: center;
-            gap: 4px;
+            gap: 8px;
             position: absolute;
             bottom: 24px;
             right: 24px;
