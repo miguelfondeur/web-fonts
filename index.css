@@ -85,7 +85,7 @@ aside {
         height: 100%;
 
         & a {
-            font-weight: bold;
+            font-family: Arial Rounded MT Bold;
             color: rgb(196, 199, 197);
             display: flex;
             flex-direction: column;
@@ -108,7 +108,6 @@ aside {
                 .icon {
                     width: 24px;
                     height: 24px;
-                    font-weight: 600;
                     font-size: 18px;
                     display: inline-flex;
                     align-items: center;
@@ -240,12 +239,14 @@ main header {
         width: 100%;
         gap: 24px;
 
-        & h1 {
+        & h1#logo {
             font-weight: 400;
             font-size: 28px;
+            font-family: Arial Rounded MT Bold;
+            color: white;
 
             span {
-                color: white;
+                color: #c7c0ff;
             }
 
             @media (width < 767px) {
@@ -345,6 +346,7 @@ main header {
 
             h3, p {
                 margin-bottom: 0;
+                font-weight: 600;
             }
         }
         .supported-by {
