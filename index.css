@@ -72,6 +72,7 @@ aside {
     position: fixed;
     width: 96px;
     height: 100vh;
+    z-index: 10;
 
     & nav {
         width: 96px;
@@ -245,12 +246,14 @@ main header {
             font-family: Arial Rounded MT Bold;
             color: white;
 
-            span {
-                color: #c7c0ff;
-            }
+            span { color: white; }
+            span.accent { color: #c7c0ff; }
+            span.long { display: inline; }
+            span.short { display: none; }
 
-            @media (width < 767px) {
-                display: none;
+            @media (width < 960px) {
+                span.long { display: none; }
+                span.short { display: inline; }
             }
         }
     }
