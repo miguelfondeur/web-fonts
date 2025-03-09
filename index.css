@@ -367,6 +367,7 @@ main header {
     font-size: var(--font-size-example);
     font-weight: 400;
     font-size-adjust: 0.5;
+    margin-bottom: 24px;
 
     &:focus-visible, &:focus {
         border: 0;
