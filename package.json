@@ -1,6 +1,18 @@
 {
+  "name": "web-fonts",
+  "version": "1.0.0",
+  "main": ".eleventy.js",
+  "author": "Miguel Fondeur",
+  "license": "ISC",
+  "description": "A small web app for web safe fonts.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "esbuild": "^0.25.1"
   }
 }
