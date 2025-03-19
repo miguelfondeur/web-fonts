@@ -6,10 +6,10 @@ const esbuild = require("esbuild");
 // CSS bundling function
 async function bundleCss() {
     const result = await esbuild.build({
-        entryPoints: ["src/css/main.css"],
+        entryPoints: ["src/css/styles.css"],
         bundle: true,
         minify: true,
-        outfile: "public/css/main.min.css",
+        outfile: "public/css/styles.min.css",
         loader: {
             ".css": "css"
         }

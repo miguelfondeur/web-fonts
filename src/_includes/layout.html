@@ -5,13 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Fonts | {{ title }}</title>
 
-        <link rel="stylesheet" href="/apps/web-fonts/_assets/css/styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
 
         <!-- Web Fonts specific JavaScript -->
+        <script src="/js/popover.min.js" type="module" defer></script>
         {% if title == "Home" %}
-            <script src="/apps/web-fonts/_assets/js/app.js" type="module"></script>
+            <script src="/js/app.js" type="module"></script>
         {% endif %}
-        <script src="/apps/web-fonts/_assets/js/sidebar.js" type="module" defer></script>
+        <script src="/js/sidebar.js" type="module" defer></script>
+        
 
         <!-- SEO Meta -->
         <meta name="author" content="Miguel Fondeur">
@@ -62,13 +64,13 @@
         <aside>
             <nav>
                 <!-- Loop through app links -->
-                    <a href="/apps/web-fonts/" {% if page.url == '/apps/web-fonts/' %} aria-current="page" {% endif %}>
+                    <a href="/" {% if page.url == '/' %} aria-current="page" {% endif %}>
                         <div class="icon-square">
                             <span class="icon">A</span>
                         </div>
                         <span>Fonts</span>
                     </a>
-                    <a href="/apps/web-fonts/knowledge/" {% if page.url == '/apps/web-fonts/knowledge/' %} aria-current="page" {% endif %}>
+                    <a href="/knowledge/" {% if page.url == '/knowledge/' %} aria-current="page" {% endif %}>
                         <div class="icon-square">
                             <span class="icon">?</span>
                         </div>
