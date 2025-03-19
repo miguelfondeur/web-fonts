@@ -8,12 +8,7 @@
         <link rel="stylesheet" href="/css/styles.css">
 
         <!-- Web Fonts specific JavaScript -->
-        <script src="/js/popover.min.js" type="module" defer></script>
-        {% if title == "Home" %}
-            <script src="/js/app.js" type="module"></script>
-        {% endif %}
         <script src="/js/sidebar.js" type="module" defer></script>
-        
 
         <!-- SEO Meta -->
         <meta name="author" content="Miguel Fondeur">
@@ -41,23 +36,6 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/web-fonts/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/web-fonts/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/web-fonts/favicon-16x16.png">
-
-        <style>
-            .js-warning {
-                padding: 16px;
-                text-align: center;
-                font-weight: 600;
-                font-size: 20px;
-                background-color: #ffc0c0;
-                color: #ce3431;
-                position: sticky;
-                top: 0;
-                z-index: 10;
-            }
-            body.js-enabled .js-warning {
-                display: none;
-            }
-        </style>
     </head>
     <body data-sidebar-open="{% if title == "Home" %}true{% endif %}">
         <!-- Sidebars -->
@@ -85,25 +63,12 @@
                     </svg>
                 </a>
             </nav>
-            <!-- Sidebar -->
-            <div id="sidebar" data-open="false">
-                <div class="sidebar-top">
-                    <button id="mobile-sidebar-trigger">r</button>
-                </div>
-                <!-- Add sidebar section HTML somehow from markdown files -->
-                {{ sidebarContent | raw }}
-            </div>
         </aside>
         <!-- Main Page -->
-        <main>
+        <main style=" text-align: center;">
 
-            <h1>Page or Resources not found</h1>
+            <h1 style="margin-block: 60px;">Page or Resource not found</h1>
 
-            <div class="mobile-overlay"></div>
         </main>
-        <!-- inline scripts -->
-        <script>
-            document.body.classList.add("js-enabled");
-        </script>
     </body>
 </html>
