@@ -147,6 +147,7 @@ color: #c0ffee;
 text-rendering: optimizeLegibility;
 font-variant-ligatures: historical-ligatures;
 font-size-adjust: 0.5;
+font-optical-sizing: auto;
 ```
 
 </div>
