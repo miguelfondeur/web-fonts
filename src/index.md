@@ -118,31 +118,37 @@ sidebarContent: |
                 <p><strong>CSS Declaration</strong></p>
                 <div id="css-declaration"></div>
                 <p><strong>Using Styles</strong></p>
-                <pre><code>
-font-weight: bold; 
+
+```css
+font-weight: bold;
 font-weight: 600;
 font-style: italic;
 font-variant: small-caps;
-color: #C0FFEE;
-                </code></pre>
+color: #c0ffee;
+```
+
                 <p><strong>Considerations</strong></p>
                 <p>Use fallbacks. Not all browsers and operating systems support all fonts. If you're using a font with multiple font-weights, consider a fallback that also includes a similar quantity.</p>
                 <div id="css-fallbacks"></div>
                 <p>Consider adding your font as a CSS custom property. This is especially useful when using more than one font.</p>
-                <pre><code>
+
+```css
 :root {
---font-heading: Tahoma;
---font-body: sans-serif;
+  --font-heading: Tahoma;
+  --font-body: sans-serif;
 }
-                </code></pre>
+```
+
                 <p>Consider Optimizing Legibility</p>
-                <pre><code>
+
+```css
 -moz-osx-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
 font-variant-ligatures: common-ligatures;
 font-size-adjust: 0.5;
-                </code></pre>
+```
+
             </div>
         </details>
     </header>
@@ -221,24 +227,25 @@ font-size-adjust: 0.5;
                 <h1>Whereas recognition of the inherent dignity</h1>
                 <h2>Section Title Three</h2>
                 <p>
-                    <strong>Whereas</strong> all individuals are entitled to <em>universal</em> and 
-                    <u>equal access</u> to digital resources, and whereas digital literacy is a 
-                    fundamental right, it is essential to establish principles of <mark>accessibility</mark>, 
-                    <s>discrimination</s>-free practices, and ethical data governance.  
+                    <strong>Whereas</strong> all individuals are entitled to <em>universal</em> and
+                    <u>equal access</u> to digital resources, and whereas digital literacy is a
+                    fundamental right, it is essential to establish principles of <mark>accessibility</mark>,
+                    <s>discrimination</s>-free practices, and ethical data governance.
                 </p>
                 <h3>Section Title Three</h3>
                 <p>
-                    The protection of personal data <sub>(Article 12)</sub> and the safeguarding 
-                    of online freedoms <sup>(Amendment II)</sup> are paramount. 
+                    The protection of personal data <sub>(Article 12)</sub> and the safeguarding
+                    of online freedoms <sup>(Amendment II)</sup> are paramount.
                     No entity shall <del>infringe</del> upon these rights without due process.
                 </p>
                 <p>
-                    <ins>Therefore</ins>, let it be resolved that all digital entities shall uphold 
-                    the principles of security, transparency, and <b>fairness</b>. The right to 
-                    online privacy shall not be abridged, and all individuals shall retain ownership 
-                    of their digital presence. 
-                </p>                        
+                    <ins>Therefore</ins>, let it be resolved that all digital entities shall uphold
+                    the principles of security, transparency, and <b>fairness</b>. The right to
+                    online privacy shall not be abridged, and all individuals shall retain ownership
+                    of their digital presence.
+                </p>
             </div>
         </div>
     </section>
+
 </dialog>
