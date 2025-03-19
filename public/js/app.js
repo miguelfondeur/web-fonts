@@ -51,6 +51,7 @@ const renderFonts = () => {
                 class="card" 
                 data-name="${font.name}" 
                 data-declaration="${font.declaration}" 
+                data-fallbacks="${font.fallbacks}" 
                 data-type="${font.type}"
                 data-weights="${font.weights}"
                 data-supported="${font.supportedOS.join(', ')}"
@@ -89,12 +90,12 @@ document.addEventListener('click', e => {
 
         // Open font details
         const weights = card.dataset.weights.split(',');
-        openDetails(card.dataset.name, card.dataset.declaration, weights, card.dataset.type);
+        openDetails(card.dataset.name, card.dataset.declaration, weights, card.dataset.fallbacks);
     }
 });
 
 // Open font details
-const openDetails = (fontName, declaration, weights, type) => {
+const openDetails = (fontName, declaration, weights, fallbacks) => {
     stylePreview.innerHTML = ""; //Clear First!
 
     // Set Active Values
@@ -102,8 +103,8 @@ const openDetails = (fontName, declaration, weights, type) => {
     document.documentElement.style.setProperty('--active-font', declaration);
     
     // Update CSS declarations
-    document.getElementById('css-declaration').innerHTML = `<pre><code>font-family: ${declaration};</code></pre>`;
-    document.getElementById('css-fallbacks').innerHTML = `<pre><code>font-family: ${declaration}, ${type};</code></pre>`;
+    document.getElementById('css-declaration').innerHTML = `<pre class="language-css"><code class="language-css"><span class="token property">font-family:</span> ${declaration};</code></pre>`;
+    document.getElementById('css-fallbacks').innerHTML = `<pre class="language-css"><code class="language-css"><span class="token property">font-family:</span> ${declaration}, ${fallbacks};</code></pre>`;
 
     weights.forEach(weight => {
         const styleCardHTML = `

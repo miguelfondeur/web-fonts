@@ -127,7 +127,7 @@ font-variant: small-caps;
 color: #c0ffee;
 ```
 
-                <p><strong>Considerations</strong></p>
+<p><strong>Considerations</strong></p>
                 <p>Use fallbacks. Not all browsers and operating systems support all fonts. If you're using a font with multiple font-weights, consider a fallback that also includes a similar quantity.</p>
                 <div id="css-fallbacks"></div>
                 <p>Consider adding your font as a CSS custom property. This is especially useful when using more than one font.</p>
@@ -139,17 +139,17 @@ color: #c0ffee;
 }
 ```
 
-                <p>Consider Optimizing Legibility</p>
+<p>Consider Optimizing Legibility</p>
 
 ```css
 -moz-osx-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
-font-variant-ligatures: common-ligatures;
+font-variant-ligatures: historical-ligatures;
 font-size-adjust: 0.5;
 ```
 
-            </div>
+</div>
         </details>
     </header>
     <!-- Specimen? -->

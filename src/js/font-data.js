@@ -2,7 +2,7 @@ export const fonts = [
     {
         name: "Arial", 
         declaration: "Arial",
-        fallbacks: "'Helvetica', sans-serif",
+        fallbacks: "Helvetica, sans-serif",
         weights: [400, 600],
         type: "sans-serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
@@ -10,7 +10,7 @@ export const fonts = [
     {
         name: "Arial Black", 
         declaration: "'Arial Black'",
-        fallbacks: "'Arial', 'Helvetica', sans-serif",
+        fallbacks: "Arial, Helvetica, sans-serif",
         weights: [400],
         type: "sans-serif",
         supportedOS: ["windows", "macos", "ios", "android"]
@@ -18,7 +18,7 @@ export const fonts = [
     {
         name: "Arial Rounded Bold", 
         declaration: "Arial Rounded MT Bold",
-        fallbacks: "'Arial', 'Helvetica', sans-serif",
+        fallbacks: "Arial, Helvetica, sans-serif",
         weights: [400, 600],
         type: "sans-serif",
         supportedOS: ["windows", "macos"]
@@ -26,7 +26,7 @@ export const fonts = [
     {
         name: "Baskerville", 
         declaration: "Baskerville",
-        fallbacks: "'Times New Roman', 'Georgia', serif",
+        fallbacks: "'Times New Roman', Georgia, serif",
         weights: [400, 600, 700],
         type: "serif",
         supportedOS: ["macos", "ios"]
@@ -34,7 +34,7 @@ export const fonts = [
     {
         name: "Brush Script MT", 
         declaration: "Brush Script MT",
-        fallbacks: "'Comic Sans MS', cursive",
+        fallbacks: "Comic Sans MS, cursive",
         weights: [400, 600],
         type: "cursive",
         supportedOS: ["windows", "macos", "ios"]
@@ -42,7 +42,7 @@ export const fonts = [
     {
         name: "Calibri",
         declaration: "calibri",
-        fallbacks: "'Calibri', 'Gill Sans', 'Gill Sans MT', sans-serif",
+        fallbacks: "Calibri, Gill Sans, Gill Sans MT, sans-serif",
         weights: [400, 600, 700],
         type: "sans-serif",
         supportedOS: ["windows", "macos"]
@@ -50,7 +50,7 @@ export const fonts = [
     {
         name: "Cambria",
         declaration: "cambria",
-        fallbacks: "'Cambria', Georgia, serif",
+        fallbacks: "Cambria, Georgia, serif",
         weights: [400, 600],
         type: "serif",
         supportedOS: ["windows"]
@@ -58,7 +58,7 @@ export const fonts = [
     {
         name: "Cambria Math", 
         declaration: "math",
-        fallbacks: "'Cambria', serif",
+        fallbacks: "Cambria, serif",
         weights: [400, 600],
         type: "serif",
         supportedOS: ["windows", "macos"]
@@ -82,7 +82,7 @@ export const fonts = [
     {
         name: "Courier New", 
         declaration: "Courier",
-        fallbacks: "'Courier New', monospace",
+        fallbacks: "Courier New, monospace",
         weights: [400, 600],
         type: "monospace",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
@@ -98,7 +98,7 @@ export const fonts = [
     {
         name: "Futura", 
         declaration: "Futura",
-        fallbacks: "'Arial', sans-serif",
+        fallbacks: "Arial, sans-serif",
         weights: [400, 600],
         type: "sans-serif",
         supportedOS: ["macos", "ios"]
@@ -106,7 +106,7 @@ export const fonts = [
     {
         name: "Geneva", 
         declaration: "Geneva",
-        fallbacks: "'Verdana', sans-serif",
+        fallbacks: "Verdana, sans-serif",
         weights: [400, 600],
         type: "sans-serif",
         supportedOS: ["macos"]
@@ -122,7 +122,7 @@ export const fonts = [
     {
         name: "Helvetica", 
         declaration: "Helvetica",
-        fallbacks: "'Arial', sans-serif",
+        fallbacks: "Arial, sans-serif",
         weights: [100, 400, 600],
         type: "sans-serif",
         supportedOS: ["macos", "ios"]
@@ -130,7 +130,7 @@ export const fonts = [
     {
         name: "Helvetica Neue", 
         declaration: "Helvetica Neue",
-        fallbacks: "'Helvetica', 'Arial', sans-serif",
+        fallbacks: "Helvetica, Arial, sans-serif",
         weights: [100, 200, 400, 500, 600],
         type: "sans-serif",
         supportedOS: ["macos", "ios"]
@@ -138,7 +138,7 @@ export const fonts = [
     {
         name: "Impact", 
         declaration: "Impact",
-        fallbacks: "'Arial Black', 'Arial', sans-serif",
+        fallbacks: "Arial Black, Arial, sans-serif",
         weights: [400],
         type: "sans-serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
@@ -146,7 +146,7 @@ export const fonts = [
     {
         name: "Monaco", 
         declaration: "monaco",
-        fallbacks: "'Courier New', monospace",
+        fallbacks: "Courier New, monospace",
         weights: [400, 600],
         type: "monospace",
         supportedOS: ["macos", "ios"]
@@ -162,7 +162,7 @@ export const fonts = [
     {
         name: "Optima", 
         declaration: "Optima",
-        fallbacks: "'Arial', sans-serif",
+        fallbacks: "Arial, sans-serif",
         weights: [400, 600, 800],
         type: "sans-serif",
         supportedOS: ["macos", "ios"]
@@ -170,7 +170,7 @@ export const fonts = [
     {
         name: "Papyrus", 
         declaration: "Papyrus",
-        fallbacks: "'Comic Sans MS', 'Arial', sans-serif",
+        fallbacks: "Comic Sans MS, Arial, sans-serif",
         weights: [400, 600],
         type: "fantasy",
         supportedOS: ["windows", "macos", "ios"]
@@ -186,7 +186,7 @@ export const fonts = [
     {
         name: "Segoe UI",
         declaration: "segoe-ui",
-        fallbacks: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        fallbacks: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
         weights: [400, 600, 700],
         type: "sans-serif",
         supportedOS: ["windows", "macos"]
@@ -202,7 +202,7 @@ export const fonts = [
     {
         name: "Tahoma", 
         declaration: "Tahoma",
-        fallbacks: "'Verdana', sans-serif",
+        fallbacks: "Verdana, sans-serif",
         weights: [400, 600],
         type: "sans-serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
@@ -218,7 +218,7 @@ export const fonts = [
     {
         name: "Times New Roman", 
         declaration: "'Times New Roman'",
-        fallbacks: "'Times', serif",
+        fallbacks: "Times, serif",
         weights: [400, 600],
         type: "serif",
         supportedOS: ["windows", "macos"]
@@ -226,7 +226,7 @@ export const fonts = [
     {
         name: "Trebuchet MS", 
         declaration: "'Trebuchet MS'",
-        fallbacks: "'Arial', sans-serif",
+        fallbacks: "Arial, sans-serif",
         weights: [400, 600],
         type: "sans-serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
@@ -234,7 +234,7 @@ export const fonts = [
     {
         name: "Verdana", 
         declaration: "Verdana",
-        fallbacks: "'Tahoma', sans-serif",
+        fallbacks: "Tahoma, sans-serif",
         weights: [400, 600],
         type: "sans-serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
