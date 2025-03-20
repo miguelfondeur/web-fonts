@@ -145,9 +145,16 @@ color: #c0ffee;
 -moz-osx-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
-font-variant-ligatures: historical-ligatures;
 font-size-adjust: 0.5;
 font-optical-sizing: auto;
+```
+
+<p>Don't Overlook Formatting Options</p>
+
+```css
+font-variant-ligatures: historical-ligatures;
+text-align: justify;
+hyphens: auto;
 ```
 
 </div>
