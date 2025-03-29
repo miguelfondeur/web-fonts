@@ -40,6 +40,14 @@ export const fonts = [
         supportedOS: ["macos", "ios"]
     },  
     {
+        name: "Bradley Hand", 
+        declaration: "'Bradley Hand'",
+        fallbacks: "'Segoe Print', Chilanka, TSCu_Comic, casual, cursive",
+        weights: [400],
+        type: "cursive",
+        supportedOS: ["macos", "ios"]
+    }, 
+    {
         name: "Brush Script MT", 
         declaration: "Brush Script MT",
         fallbacks: "Comic Sans MS, cursive",
@@ -47,14 +55,14 @@ export const fonts = [
         type: "cursive",
         supportedOS: ["windows", "macos", "ios"]
     },
-    {
-        name: "Calibri",
-        declaration: "calibri",
-        fallbacks: "Calibri, Gill Sans, Gill Sans MT, sans-serif",
-        weights: [400, 600, 700],
-        type: "sans-serif",
-        supportedOS: ["windows", "macos"]
-    },
+    // {
+    //     name: "Calibri",
+    //     declaration: "calibri",
+    //     fallbacks: "Calibri, Gill Sans, Gill Sans MT, sans-serif",
+    //     weights: [400, 600, 700],
+    //     type: "sans-serif",
+    //     supportedOS: ["windows", "macos"]
+    // },
     {
         name: "Cambria",
         declaration: "cambria",
@@ -112,6 +120,22 @@ export const fonts = [
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
     {
+        name: "Didot", 
+        declaration: "Didot",
+        fallbacks: "'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif",
+        weights: [400, 600],
+        type: "serif",
+        supportedOS: ["macos", "ios"]
+    },
+    {
+        name: "DIN Alternative", 
+        declaration: "'DIN Alternate'",
+        fallbacks: "Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif",
+        weights: [400],
+        type: "sans-serif",
+        supportedOS: ["macos","ios"]
+    },
+    {
         name: "Futura", 
         declaration: "Futura",
         fallbacks: "Arial, sans-serif",
@@ -152,6 +176,14 @@ export const fonts = [
         supportedOS: ["macos", "ios"]
     },
     {
+        name: "Hiragino Maru Gothic ProN", 
+        declaration: "'Hiragino Maru Gothic ProN'",
+        fallbacks: "ui-rounded, Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif",
+        weights: [400, 600],
+        type: "sans-serif",
+        supportedOS: ["macos", "ios"]
+    },
+    {
         name: "Impact", 
         declaration: "Impact",
         fallbacks: "Arial Black, Arial, sans-serif",
@@ -159,6 +191,14 @@ export const fonts = [
         type: "sans-serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
     },
+    // {
+    //     name: "Inter",
+    //     declaration: "Inter",
+    //     fallbacks: "Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif",
+    //     weights: [100, 200, 400, 500, 600],
+    //     type: "sans-serif",
+    //     supportedOS: ["linux"]
+    // },
     {
         name: "Iowan Old Style", 
         declaration: "'Iowan Old Style'",
@@ -206,21 +246,37 @@ export const fonts = [
         weights: [400, 600],
         type: "serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
-    },  
+    }, 
     {
-        name: "Segoe UI",
-        declaration: "segoe-ui",
-        fallbacks: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
-        weights: [400, 600, 700],
-        type: "sans-serif",
-        supportedOS: ["windows", "macos"]
-    },
+        name: "Rockwell", 
+        declaration: "Rockwell",
+        fallbacks: "'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif",
+        weights: [400, 600],
+        type: "serif",
+        supportedOS: ["windows","macos"]
+    },    
+    // {
+    //     name: "Segoe UI",
+    //     declaration: "segoe-ui",
+    //     fallbacks: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+    //     weights: [400, 600, 700],
+    //     type: "sans-serif",
+    //     supportedOS: ["windows", "macos"]
+    // },
     {
         name: "Seravek",
         declaration: "Seravek",
         fallbacks: "'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
         weights: [100, 200, 400, 500, 600],
         type: "sans-serif",
+        supportedOS: ["macos", "ios"]
+    },
+    {
+        name: "Superclarendon",
+        declaration: "Superclarendon",
+        fallbacks: "'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif",
+        weights: [200, 400, 600, 800],
+        type: "serif",
         supportedOS: ["macos", "ios"]
     },
     {
