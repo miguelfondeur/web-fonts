@@ -24,6 +24,14 @@ export const fonts = [
         supportedOS: ["windows", "macos"]
     },
     {
+        name: "Avenir", 
+        declaration: "Avenir",
+        fallbacks: "Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif",
+        weights: [300, 400, 500, 600, 900],
+        type: "sans-serif",
+        supportedOS: ["macos", "ios"]
+    },  
+    {
         name: "Baskerville", 
         declaration: "Baskerville",
         fallbacks: "'Times New Roman', Georgia, serif",
@@ -178,7 +186,7 @@ export const fonts = [
     {
         name: "Optima", 
         declaration: "Optima",
-        fallbacks: "Arial, sans-serif",
+        fallbacks: "Candara, 'Noto Sans', source-sans-pro, sans-serif",
         weights: [400, 600, 800],
         type: "sans-serif",
         supportedOS: ["macos", "ios"]
@@ -206,6 +214,14 @@ export const fonts = [
         weights: [400, 600, 700],
         type: "sans-serif",
         supportedOS: ["windows", "macos"]
+    },
+    {
+        name: "Seravek",
+        declaration: "Seravek",
+        fallbacks: "'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
+        weights: [100, 200, 400, 500, 600],
+        type: "sans-serif",
+        supportedOS: ["macos", "ios"]
     },
     {
         name: "System UI",
