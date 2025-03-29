@@ -64,6 +64,14 @@ export const fonts = [
         supportedOS: ["windows", "macos"]
     },
     {
+        name: "Charter", 
+        declaration: "Charter",
+        fallbacks: "'Bitstream Charter', 'Sitka Text', Cambria, serif",
+        weights: [400, 600, 800],
+        type: "serif",
+        supportedOS: ["macos", "ios"]
+    },
+    {
         name: "Comic Sans", 
         declaration: "'Comic Sans MS'",
         fallbacks: "cursive",
@@ -142,6 +150,14 @@ export const fonts = [
         weights: [400],
         type: "sans-serif",
         supportedOS: ["windows", "macos", "linux", "ios", "android"]
+    },
+    {
+        name: "Iowan Old Style", 
+        declaration: "'Iowan Old Style'",
+        fallbacks: "'Palatino Linotype', 'URW Palladio L', P052, serif",
+        weights: [400, 600, 800],
+        type: "serif",
+        supportedOS: ["macos","ios"]
     },
     {
         name: "Monaco", 
