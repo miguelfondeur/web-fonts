@@ -34,7 +34,7 @@
     {
         "name": "Baskerville",
         "declaration": "Baskerville",
-        "fallbacks": "'Libre Baskerville', 'Times New Roman', serif;",
+        "fallbacks": "'Libre Baskerville', 'Times New Roman', serif",
         "weights": [400, 600, 700],
         "type": "serif",
         "supportedOS": ["macos", "ios"]
